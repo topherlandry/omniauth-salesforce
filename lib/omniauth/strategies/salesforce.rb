@@ -9,7 +9,7 @@ module OmniAuth
       MOBILE_USER_AGENTS =  'webos|ipod|iphone|ipad|android|blackberry|mobile'
 
       option :client_options, {
-        :site          => 'https://login.salesforce.com',
+        :site          => ENV['SALESFORCE_SITE'],
         :authorize_url => '/services/oauth2/authorize',
         :token_url     => '/services/oauth2/token'
       }
